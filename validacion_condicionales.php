@@ -29,20 +29,27 @@
 
 	if(isset($_POST["enviando"])){
 
-		$edad=$_POST["edad_usuario"];
+		$nombre=$_POST["nombre_usuario"];
+		$contra=$_POST["contra"];
+		
 
-		if($edad<=18){
-			echo "eres mejor de edad";
-		}
-		else if($edad<=40){
-			echo "eres joven";
-		}
-		else if($edad<=65){
-			echo "eres maduro";
-		}
-		else{
-			echo "cuidate";
+		switch($nombre){
+
+			case "Israel":
+				echo "Usuario autorizado. Hola $nombre";
+
+				break;
+
+			case "Ernesto":
+				echo "Usuario autorizado. hola $nombre";
+				break;
+
+			case "Jimena":
+				echo "Usuario autorizado. hola $nombre";
+				break;
+
+			default:
+				echo "Usuario noautorizado";
 		}
 	}
-	
 ?>
