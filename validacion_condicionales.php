@@ -33,23 +33,24 @@
 		$contra=$_POST["contra"];
 		
 
-		switch($nombre){
+		switch(true){
 
-			case "Israel":
+			case $nombre=="Israel" && $contra=="12345":
 				echo "Usuario autorizado. Hola $nombre";
 
 				break;
 
-			case "Ernesto":
+			case $nombre=="Ernesto" && $contra=="12345":
 				echo "Usuario autorizado. hola $nombre";
 				break;
 
-			case "Jimena":
+			case $nombre=="Jimena" && $contra=="12345":
 				echo "Usuario autorizado. hola $nombre";
 				break;
 
 			default:
-				echo "Usuario noautorizado";
+				echo "Usuario no autorizado";
 		}
 	}
+
 ?>
