@@ -50,6 +50,8 @@
 
 			default:
 				echo "Usuario no autorizado";
+
+		endswitch;
 		}
 	}
 
